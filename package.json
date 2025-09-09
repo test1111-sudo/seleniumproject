@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "test": "mocha -r ts-node/register 'src/test/**/*.test.ts' --exit --timeout 20000"
+   "test": "mocha -r ts-node/register --extension ts 'src/test/**/*.test.ts' --timeout 20000"
+
   },
   "keywords": [],
   "author": "",
@@ -17,10 +17,11 @@
     "selenium-webdriver": "^4.23.0"
   },
   "devDependencies": {
-    "typescript": "^5.5.0",
-    "ts-node": "^10.9.2",
-    "@types/node": "^20.0.0",
+    "@types/chai": "^4.3.0",
     "@types/mocha": "^10.0.1",
-    "@types/chai": "^4.3.0"
+    "@types/node": "^20.0.0",
+    "@types/selenium-webdriver": "^4.1.28",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
   }
 }

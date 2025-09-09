@@ -4,13 +4,16 @@ import { Waiters } from "../helper/waiters";
 import { WebDriver } from "selenium-webdriver";
 
 export class BasePage {
-public actions: Actions;
-public assertions: Assertions;
-public waiters: Waiters;
+  protected readonly driver: WebDriver;
+  public readonly actions: Actions;
+  public readonly assertions: Assertions;
+  public readonly waiters: Waiters;
 
-constructor(protected driver: WebDriver) {
-this.actions = new Actions(driver);
-this.assertions = new Assertions(driver);
-this.waiters = new Waiters(driver);
-}
+  constructor(webDriver: WebDriver) {
+    this.driver = webDriver;
+    this.actions = new Actions(this.driver);
+    this.assertions = new Assertions(this.driver);
+    this.waiters = new Waiters(this.driver);
+  }
+
 }

@@ -1,7 +1,9 @@
 import { WebDriver } from "selenium-webdriver";
-import { SignupPage } from "../../pages/signup.page";
-import { HomePage } from "../../pages/home.page";
-import { CreateDriverFactory } from "../../config/driverFactory";
+import { CreateDriverFactory } from "../../main/config/driverFactory";
+import { HomePage } from "../../main/pages/home.page";
+import { SignupPage } from "../../main/pages/signup.page";
+
+
 
 export class BaseTest {
 driver!: WebDriver;
