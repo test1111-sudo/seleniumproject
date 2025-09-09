@@ -1,0 +1,26 @@
+{
+  "name": "selenium-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha -r ts-node/register 'src/test/**/*.test.ts' --exit --timeout 20000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^6.0.1",
+    "chromedriver": "^140.0.0",
+    "mocha": "^11.7.2",
+    "selenium-webdriver": "^4.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/chai": "^4.3.0"
+  }
+}
