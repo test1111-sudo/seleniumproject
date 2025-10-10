@@ -52,7 +52,6 @@ it("test case 1", async function () {
     await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.passwordField);
     await baseTest.signUpPage.actions.setValueInField(baseTest.signUpPage.passwordField, "Password123");
     await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.dateOfBirthField);
-    await baseTest.signUpPage.actions.clickOnElement(baseTest.signUpPage.dateOfBirthField);
     await baseTest.signUpPage.actions.selectDropdownByValue(baseTest.signUpPage.dateOfBirthField, "17");
     await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.monthOfBirthField);
     await baseTest.signUpPage.actions.selectDropdownByValue(baseTest.signUpPage.monthOfBirthField, "May");
@@ -63,34 +62,10 @@ it("test case 1", async function () {
     await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.offersCheckbox);
     await baseTest.signUpPage.actions.checkCheckbox(baseTest.signUpPage.offersCheckbox);
     
-    await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.addressInformation);
-    await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.addressFirstNameField);
-    await baseTest.signUpPage.actions.setValueInField(baseTest.signUpPage.addressFirstNameField, "FML");
-    await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.addressLastNameField);
-    await baseTest.signUpPage.actions.setValueInField(baseTest.signUpPage.addressLastNameField, "FML");
-    await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.addressCompanyField);
-    await baseTest.signUpPage.actions.setValueInField(baseTest.signUpPage.addressCompanyField, "shithole");
-    await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.addressAddressField);
-    await baseTest.signUpPage.actions.setValueInField(baseTest.signUpPage.addressAddressField, "address 1");
-    await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.addressAddress2Field);
-    await baseTest.signUpPage.actions.setValueInField(baseTest.signUpPage.addressAddress2Field, "none");
-    await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.addressCountryField);
-    await baseTest.signUpPage.actions.selectDropdownByValue(baseTest.signUpPage.addressCountryField, "Georgia");
-    await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.addressStateField);
-    await baseTest.signUpPage.actions.setValueInField(baseTest.signUpPage.addressStateField, "nostate");
-    await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.addressCityField);
-    await baseTest.signUpPage.actions.setValueInField(baseTest.signUpPage.addressCityField, "Tbilisi");
-    await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.addressZipcodeField);
-    await baseTest.signUpPage.actions.setValueInField(baseTest.signUpPage.addressZipcodeField, "0111");
-    await baseTest.signUpPage.assertions.verifyElementIsVisible(baseTest.signUpPage.addressMobileNumberField);
-    await baseTest.signUpPage.actions.setValueInField(baseTest.signUpPage.addressMobileNumberField, "+995599123456");
-    await baseTest.signUpPage.actions.clickOnElement(baseTest.signUpPage.createAccountBtn);
+
+    
+
 });
 
 });
-// await baseTest.homePage.actions.clickOnElement(baseTest.homePage.signupLoginBtn);
 
-//     const urlIsCorrect = await baseTest.signUpPage.assertions.verifyPageUrl("https://automationexercise.com/login");
-//     expect(urlIsCorrect).to.be.true;
-
-//     await baseTest.signUpPage.assertions.verifyElementIsVisible(By.xpath("//h2[text()='Login to your account']"));

@@ -17,13 +17,14 @@ titleRadioMrs = By.css("#id_gender2");
 fillOutFormNameField = By.css("input[data-qa='name']");
 fillOutFormEmailField = By.css("input[data-qa='email']");
 passwordField = By.css("input[data-qa='password']");
-dateOfBirthField = By.css("input[data-qa='days']");
-monthOfBirthField = By.css("input[data-qa='months']");
-yearOfBirthField = By.css("input[data-qa='years']");
-newsletterCheckbox = By.css("input[data-qa='newsletter']");
-offersCheckbox = By.css("input[data-qa='optin']");
+dateOfBirthField = By.css("select[data-qa='days']");
+monthOfBirthField = By.css("select[data-qa='months']");
+yearOfBirthField = By.css("select[data-qa='years']");
+newsletterCheckbox = By.id("newsletter");
+offersCheckbox = By.id("optin");
 
-addressInformation = By.xpath("//b[contains(text(),'ADDRESS INFORMATION')]");
+
+
 addressFirstNameField = By.css("input[data-qa='first_name']");
 addressLastNameField = By.css("input[data-qa='last_name']");
 addressCompanyField = By.css("input[data-qa='company']");
