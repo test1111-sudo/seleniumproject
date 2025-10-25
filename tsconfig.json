@@ -1,18 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES2020",                        
-    "module": "CommonJS",                      
-    "lib": ["ES2020", "DOM"],                  
-    "moduleResolution": "node",                
-    "esModuleInterop": true,                   
-    "allowSyntheticDefaultImports": true,      
-    "strict": true,                            
-    "skipLibCheck": true,                      
-    "forceConsistentCasingInFileNames": true,  
-    "outDir": "dist",                          
-    "rootDir": "src",                          
-    "types": ["node", "mocha"]                 
+    "target": "ES2020",
+    "module": "CommonJS",
+    "lib": ["ES2020", "DOM"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node", "@playwright/test"]
   },
-  "include": ["src/**/*.ts"],                  
-  "exclude": ["node_modules", "dist"]          
+  "include": ["src/**/*.ts", "tests/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }
