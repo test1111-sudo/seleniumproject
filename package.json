@@ -4,24 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register --extension ts 'src/test/**/*.test.ts' --timeout 20000"
+    "test": "playwright test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "chai": "^6.0.1",
-    "mocha": "^11.7.2",
-    "selenium-webdriver": "^4.23.0"
-  },
   "devDependencies": {
-    "@types/chai": "^4.3.0",
-    "@types/chromedriver": "^81.0.5",
-    "@types/mocha": "^10.0.1",
-    "@types/node": "^20.0.0",
-    "@types/selenium-webdriver": "^4.1.28",
-    "chromedriver": "^140.0.0",
-    "ts-node": "^10.9.2",
+    "@playwright/test": "^1.48.0",
     "typescript": "^5.5.0"
   }
 }
